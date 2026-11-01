@@ -23,12 +23,12 @@ const Auth = () => {
     }, [auth.otpSent, auth.error]);
     return (<div className='flex justify-center h-[90vh] items-center'>
             <div className='max-w-md max-h-[90vh] overflow-y-auto rounded-md border shadow-lg '>
-                <img className='w-full rounded-t-md' src="/login_banner.png" alt=""/>
+                <img className='w-full rounded-t-md' src="/login_banner1.png" alt=""/>
                 <div className='mt-8 px-10 pb-8'>
                     {isLoginPage ? <LoginForm /> : <SignupForm />}
                     <GoogleSignIn loading={auth.loading} onCredential={handleGoogle}/>
 
-                    <div className='flex items-center gap-1 justify-center mt-5'>
+                    <div className='flex flex-col items-center gap-1 mt-5'>
                         <p>{isLoginPage && "Don't"} have Account ?</p>
                         <Button onClick={() => { dispatch(clearAuthStatus()); setIsLoginPage(!isLoginPage); }} size='small'>{isLoginPage ? "create customer account" : "login"}</Button>
                     </div>

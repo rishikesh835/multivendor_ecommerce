@@ -38,7 +38,7 @@ public class AppConfig {
         http.sessionManagement(management -> management.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authorizeHttpRequests(Authorize -> Authorize
 //                		.requestMatchers("/api/admin/**").hasAnyRole("SHOP_OWNER","ADMIN")
-                                .requestMatchers("/admin/**").hasRole("SELLER")
+                                .requestMatchers("/admin/**").hasAnyRole("ADMIN", "SELLER")
                                 .requestMatchers("/api/**").authenticated()
                                 .requestMatchers("/api/products/*/reviews").permitAll()
                                 .anyRequest().permitAll()

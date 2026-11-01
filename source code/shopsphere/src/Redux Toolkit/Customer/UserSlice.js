@@ -4,6 +4,7 @@ import { api } from "../../Config/Api";
 const initialState = {
     user: null,
     loading: false,
+    profileChecked: false,
     error: null,
     profileUpdated: false,
 };
@@ -27,6 +28,7 @@ const userSlice = createSlice({
         resetUserState: (state) => {
             state.user = null;
             state.loading = false;
+            state.profileChecked = false;
             state.error = null;
             state.profileUpdated = false;
         },
@@ -39,10 +41,12 @@ const userSlice = createSlice({
         })
             .addCase(fetchUserProfile.fulfilled, (state, action) => {
             state.user = action.payload;
+            state.profileChecked = true;
             state.loading = false;
         })
             .addCase(fetchUserProfile.rejected, (state, action) => {
             state.loading = false;
+            state.profileChecked = true;
             state.error = action.payload;
         });
     },

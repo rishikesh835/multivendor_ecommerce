@@ -7,6 +7,10 @@ import { fetchSellerProfile, resetSellerState } from '../Seller/sellerSlice';
 
 const finishLogin = async (data, navigate, dispatch) => {
     localStorage.setItem("jwt", data.jwt);
+    if (data.role === "ROLE_ADMIN") {
+        navigate("/admin");
+        return;
+    }
     if (data.role === "ROLE_SELLER") {
         dispatch(resetSellerState());
         const profileResult = await dispatch(fetchSellerProfile(data.jwt));

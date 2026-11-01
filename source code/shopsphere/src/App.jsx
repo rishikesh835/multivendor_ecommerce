@@ -16,7 +16,7 @@ import { fetchUserProfile } from './Redux Toolkit/Customer/UserSlice';
 import { createHomeCategories } from './Redux Toolkit/Customer/Customer/AsyncThunk';
 import { homeCategories } from './data/homeCategories';
 import Mobile from './data/Products/mobile';
-import RequireSeller from './routes/RequireSeller';
+import RequireAdmin from './routes/RequireAdmin';
 function App() {
     const dispatch = useAppDispatch();
     const { auth, sellerAuth, sellers } = useAppSelector(store => store);
@@ -39,7 +39,7 @@ function App() {
 
         <Routes>
           {sellers.profile && <Route path='/seller/*' element={<SellerDashboard />}/>}
-          <Route path='/admin/*' element={<RequireSeller><AdminDashboard /></RequireSeller>}/>
+          <Route path='/admin/*' element={<RequireAdmin><AdminDashboard /></RequireAdmin>}/>
           <Route path='/verify-seller/:otp' element={<SellerAccountVerification />}/>
           <Route path='/seller-account-verified' element={<SellerAccountVerified />}/>
           <Route path='/become-seller' element={<BecomeSeller />}/>

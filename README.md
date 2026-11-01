@@ -33,24 +33,24 @@ then signup
 
 Sample Images:
 User Login:
-![Screenshot 2025-03-12 150859](https://github.com/user-attachments/assets/1ad6f454-f4ad-46e5-86ff-0b763a44c3ae)
+![User Login](assets/images/readme%20images/user_login.png)
 
 Seller Dashboard:
-![Screenshot 2025-03-12 151348](https://github.com/user-attachments/assets/4ea24198-6143-46c6-99f4-4e1d0a690888)
+![Seller Dashboard](assets/images/readme%20images/seller_dashboard.png)
 
 Seller order section:
-![Screenshot 2025-03-12 151358](https://github.com/user-attachments/assets/7e25d913-0f5a-412d-adc2-9b8b79adc55a)
+![Seller order section](assets/images/readme%20images/seller_orders.png)
 
 Admin Dashboard:
-![Screenshot 2025-03-12 151814](https://github.com/user-attachments/assets/f328113a-150c-4fba-9356-95d6afe87fa3)
+![Admin Dashboard](assets/images/readme%20images/admin_dashboard.png)
 
 Seller Login:
-![Screenshot 2025-03-12 150936](https://github.com/user-attachments/assets/95618804-1eee-4d9a-8d29-be5639360268)
+![Seller Login](assets/images/readme%20images/seller_login.png)
 
 User Search Category:
-![Screenshot 2025-03-12 144136](https://github.com/user-attachments/assets/b79d0d8d-fe1e-4572-add7-c5aaec690e79)
+![User Search Category](assets/images/readme%20images/user_filters.png)
 
 User Dashboard:
-![Screenshot 2025-03-12 144123](https://github.com/user-attachments/assets/12f83321-ec36-4a52-91c6-8e1e6c3f24e5)
+![User Dashboard](assets/images/readme%20images/user_dashboard.png)
 
 
