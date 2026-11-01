@@ -1,0 +1,2 @@
+// types/payoutsTypes.ts
+export {};
